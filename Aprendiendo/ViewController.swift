@@ -8,10 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //MARK: - Referencias UI
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func loginButtonAction(_ sender: UIButton) {
+        
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        
+        if email == "carlos@gmail.com", password == "123" {
+            print("Bienvenido")
+            performSegue(withIdentifier: "home_segue", sender: nil)
+        } else {
+            print("Credenciles incorrectas")
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view..
+        
+        print("Hola mundo")
     }
 
 

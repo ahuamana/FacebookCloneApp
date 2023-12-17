@@ -42,6 +42,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Sesión">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonprueba" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2A-Ir-ngu"/>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPJ-U8-xmj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwH-j6-cMb">
                                 <rect key="frame" x="160" y="704" width="72" height="35"/>
@@ -70,6 +74,11 @@
                         <color key="backgroundColor" red="0.1450980392" green="0.36078431370000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="0xs-IL-HUZ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="hHs-FL-RF3" id="btJ-XL-JJM"/>
+                        <outlet property="passwordTextField" destination="ipL-ea-Urr" id="by1-tf-kNV"/>
+                        <segue destination="Rwm-2B-gm5" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" id="bvi-yg-KCC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +115,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXa-df-VVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660" y="4"/>
+            <point key="canvasLocation" x="1627" y="736"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="NRC-Kt-xLw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Rwm-2B-gm5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g38-FP-hsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="4"/>
         </scene>
         <!--Ayuda-->
         <scene sceneID="Fu3-FJ-JsJ">
@@ -122,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOY-l2-Q5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="708"/>
+            <point key="canvasLocation" x="298" y="736"/>
         </scene>
     </scenes>
     <resources>
