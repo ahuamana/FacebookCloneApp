@@ -13,9 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
+      
         
-        let email = emailTextField.text
-        let password = passwordTextField.text
+        guard let email = emailTextField.text, !email.isEmpty else {
+            print("empty email")
+            return
+        }
+        
+        guard let password = passwordTextField.text, !password.isEmpty  else {
+            print("empty passs")
+            return
+        }
+                
+        
+        
         
         if email == "carlos@gmail.com", password == "123" {
             print("Bienvenido")
@@ -30,8 +41,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view..
-        
-        print("Hola mundo")
+    
     }
 
 

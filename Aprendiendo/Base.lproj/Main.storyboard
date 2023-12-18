@@ -43,7 +43,6 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonprueba" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2A-Ir-ngu"/>
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPJ-U8-xmj"/>
                                 </connections>
                             </button>
